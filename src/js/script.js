@@ -3,5 +3,5 @@ const boton = document.getElementById("boton");
 const lista = document.getElementById("lista");
 
 boton.addEventListener("click", () => {
-
+    const tarea = document.createElement("li");
 });
