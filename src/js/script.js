@@ -2,6 +2,10 @@ const input = document.getElementById("input");
 const boton = document.getElementById("boton");
 const lista = document.getElementById("lista");
 
+const todas = document.getElementById("todas");
+const pendientes = document.getElementById("pendientes");
+const completadas = document.getElementById("completadas");
+
 boton.addEventListener("click", () => {
      if (input.value.trim() === "") {
         return;
