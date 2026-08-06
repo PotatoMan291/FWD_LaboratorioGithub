@@ -31,3 +31,37 @@ eliminar.addEventListener("click", (event) => {
     event.stopPropagation();
     tarea.remove();
 });
+
+todas.addEventListener("click", () => {
+
+    document.querySelectorAll("li").forEach((tarea) => {
+
+        tarea.style.display = "block";
+
+    });
+
+});
+
+pendientes.addEventListener("click", () => {
+
+    document.querySelectorAll("li").forEach((tarea) => {
+
+        tarea.style.display = tarea.classList.contains("completada")
+            ? "none"
+            : "block";
+
+    });
+
+});
+
+completadas.addEventListener("click", () => {
+
+    document.querySelectorAll("li").forEach((tarea) => {
+
+        tarea.style.display = tarea.classList.contains("completada")
+            ? "block"
+            : "none";
+
+    });
+
+});
