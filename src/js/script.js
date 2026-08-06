@@ -6,4 +6,5 @@ boton.addEventListener("click", () => {
     const tarea = document.createElement("li");
     tarea.textContent = input.value;
     lista.appendChild(tarea);
+    input.value = "";
 });
