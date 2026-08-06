@@ -1,3 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.completada{
+    text-decoration: line-through;
+    color: gray;
+}

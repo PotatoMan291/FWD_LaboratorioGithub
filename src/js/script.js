@@ -9,6 +9,11 @@ boton.addEventListener("click", () => {
     
     const tarea = document.createElement("li");
     tarea.textContent = input.value;
+    
+    tarea.addEventListener("click", () => {
+        tarea.classList.toggle("completada");
+    });
+
     lista.appendChild(tarea);
     input.value = "";
 });
