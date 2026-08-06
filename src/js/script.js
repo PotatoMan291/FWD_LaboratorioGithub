@@ -22,3 +22,8 @@ boton.addEventListener("click", () => {
     lista.appendChild(tarea);
     input.value = "";
 });
+
+eliminar.addEventListener("click", (event) => {
+    event.stopPropagation();
+    tarea.remove();
+});
